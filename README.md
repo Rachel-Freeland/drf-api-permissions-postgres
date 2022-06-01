@@ -1,6 +1,6 @@
-# LAB - Class xx
-## Project: Project Name Here
-### Author: Student/Group Name
+# LAB - Class 32
+## Project: Permissions & Postgresql
+### Author: Rachel Freeland
 ### Links and Resources
 <!-- back-end server url (when applicable)
 front-end application (when applicable) -->
