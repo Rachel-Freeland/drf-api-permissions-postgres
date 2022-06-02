@@ -90,3 +90,9 @@ class DogTests(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
         dogs = Dog.objects.all()
         self.assertEqual(len(dogs), 0)
+
+    def test_authentication_required(self):
+        self.client.logout()
+        url = reverse("dog_detail")
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
