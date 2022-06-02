@@ -4,15 +4,16 @@
 ### Links and Resources
 <!-- back-end server url (when applicable)
 front-end application (when applicable) -->
-### Setup
-<!-- .env requirements (where applicable)
-i.e.
 
-PORT - Port Number
-DATABASE_URL - URL to the running Postgres instance/db -->
+### Setup
+* First time build of the container use: `docker compose up -d`
+* For each build after the 1st, use: `docker compose up --build
+
 ### How to initialize/run your application (where applicable)
-<!-- e.g. python main.py -->
+* Create a superuser with `docker compose exec web python manage.py createsuperuser` and follow the prompts
+
 ### How to use your library (where applicable)
+
 ### Tests
 * How do you run tests?
 * Any tests of note?
