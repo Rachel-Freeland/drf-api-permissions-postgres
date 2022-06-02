@@ -10,6 +10,6 @@ class DogList(generics.ListCreateAPIView):
 
 
 class DogDetail(generics.RetrieveUpdateDestroyAPIView):
-    permission_classes = (IsOwnerOrReadOnly,)
+    permission_classes = (IsOwnerOrReadOnly, )
     queryset = Dog.objects.all()
     serializer_class = DogSerializer
